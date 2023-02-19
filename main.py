@@ -32,16 +32,10 @@ def find_mismatch(text):
 
 def main():
     
-    text = input().strip()
+    text = input()
     if text[0]=='I':
-        text1=text[1:]
-    else:
-        text1=text
-
-    mismatch = find_mismatch(text1)
-    if mismatch=="Success":
-        print(mismatch)
-    else:
+        text=input()
+        mismatch = find_mismatch(text)
         print(mismatch)
     # Printing answer, write your code here
 
